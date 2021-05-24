@@ -1,0 +1,94 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>99c84198-1c8b-4ebf-9610-b8d897d29982</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Breakout.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>C200-Breakout-Team27</Name>
+    <RootNamespace>C200-Breakout-Team27</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="block.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BlockRows.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Breakout.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Levels.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="heart.png" />
+    <Content Include="High_Score.txt" />
+    <Content Include="sounds\270302__littlerobotsoundfactory__collect-point-02.wav" />
+    <Content Include="sounds\270303__littlerobotsoundfactory__collect-point-01.wav" />
+    <Content Include="sounds\270304__littlerobotsoundfactory__collect-point-00.wav" />
+    <Content Include="sounds\270305__littlerobotsoundfactory__climb-rope-loop-00.wav" />
+    <Content Include="sounds\270306__littlerobotsoundfactory__explosion-02.wav" />
+    <Content Include="sounds\270307__littlerobotsoundfactory__explosion-01.wav" />
+    <Content Include="sounds\270308__littlerobotsoundfactory__explosion-00.wav" />
+    <Content Include="sounds\270309__littlerobotsoundfactory__craft-00.wav" />
+    <Content Include="sounds\270310__littlerobotsoundfactory__explosion-04.wav" />
+    <Content Include="sounds\270311__littlerobotsoundfactory__explosion-03.wav" />
+    <Content Include="sounds\270315__littlerobotsoundfactory__menu-navigate-03.wav" />
+    <Content Include="sounds\270316__littlerobotsoundfactory__open-00.wav" />
+    <Content Include="sounds\270317__littlerobotsoundfactory__jump-01.wav" />
+    <Content Include="sounds\270318__littlerobotsoundfactory__jump-02.wav" />
+    <Content Include="sounds\270319__littlerobotsoundfactory__jingle-win-01.wav" />
+    <Content Include="sounds\270320__littlerobotsoundfactory__jump-00.wav" />
+    <Content Include="sounds\270322__littlerobotsoundfactory__menu-navigate-02.wav" />
+    <Content Include="sounds\270323__littlerobotsoundfactory__jump-03.wav" />
+    <Content Include="sounds\270324__littlerobotsoundfactory__menu-navigate-00.wav" />
+    <Content Include="sounds\270325__littlerobotsoundfactory__hit-02.wav" />
+    <Content Include="sounds\270326__littlerobotsoundfactory__hit-01.wav" />
+    <Content Include="sounds\270327__littlerobotsoundfactory__hit-00.wav" />
+    <Content Include="sounds\270328__littlerobotsoundfactory__hero-death-00.wav" />
+    <Content Include="sounds\270329__littlerobotsoundfactory__jingle-lose-00.wav" />
+    <Content Include="sounds\270330__littlerobotsoundfactory__jingle-achievement-01.wav" />
+    <Content Include="sounds\270331__littlerobotsoundfactory__jingle-achievement-00.wav" />
+    <Content Include="sounds\270332__littlerobotsoundfactory__hit-03.wav" />
+    <Content Include="sounds\270333__littlerobotsoundfactory__jingle-win-00.wav" />
+    <Content Include="sounds\270334__littlerobotsoundfactory__jingle-lose-01.wav" />
+    <Content Include="sounds\270335__littlerobotsoundfactory__shoot-03.wav" />
+    <Content Include="sounds\270336__littlerobotsoundfactory__shoot-02.wav" />
+    <Content Include="sounds\270337__littlerobotsoundfactory__pickup-00.wav" />
+    <Content Include="sounds\270338__littlerobotsoundfactory__open-01.wav" />
+    <Content Include="sounds\270339__littlerobotsoundfactory__pickup-02.wav" />
+    <Content Include="sounds\270340__littlerobotsoundfactory__pickup-01.wav" />
+    <Content Include="sounds\270341__littlerobotsoundfactory__pickup-04.wav" />
+    <Content Include="sounds\270342__littlerobotsoundfactory__pickup-03.wav" />
+    <Content Include="sounds\270343__littlerobotsoundfactory__shoot-01.wav" />
+    <Content Include="sounds\270344__littlerobotsoundfactory__shoot-00.wav" />
+    <Content Include="sounds\menu-navigate-01.wav" />
+    <Content Include="sounds\_readme_and_license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sounds\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
